@@ -11,20 +11,24 @@ class MainWindow(QWidget):
 
     def init_ui(self):
         self.text = QLabel('Hello!')
-        self.label = QLabel('Name')
+        label = QLabel('Name')
         self.name_input = QLineEdit()
-        button = QPushButton('set name')
-        button.clicked.connect(self.alterName)
+
+        self.button = QPushButton('set name')
+        self.button.clicked.connect(self.alterName)
+        self.button.setAutoDefault(True)
+        self.name_input.returnPressed.connect(self.button.click)
+
 
         h = QHBoxLayout()
-        h.addWidget(self.label)
+        h.addWidget(label)
         h.addWidget(self.name_input)
 
         v = QVBoxLayout()
         v.addStretch(1)
         v.addWidget(self.text)
         v.addLayout(h)
-        v.addWidget(button)
+        v.addWidget(self.button)
 
         self.setLayout(v)
         self.setWindowTitle('Layout')
@@ -32,7 +36,8 @@ class MainWindow(QWidget):
 
     def alterName(self):
         input = self.name_input.text()
-        self.text.setText('Hello, ' + input + '!')
+        self.text.setText('Hello, ' + input + '!\nLook at the window title.')
+        self.setWindowTitle(input + "'s Window")
 
 
 if __name__ == '__main__':
