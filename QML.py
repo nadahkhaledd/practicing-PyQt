@@ -14,4 +14,3 @@ if __name__ == '__main__':
     window = engine.rootObjects()[0]
     window.show()
     sys.exit(app.exec_())
-    
