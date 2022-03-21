@@ -4,6 +4,12 @@
 
 [install Qt](https://www.qt.io/download-qt-installer)
 
+***
+- practicing how to create GUI Apps using Qt by python in continue with my practicing python journey.
+- made a basic simple window app to implement what I've learnt
+
+- get Pyqt & sip in python:
+
 ```
 pip install sip pyqt5
 ```
