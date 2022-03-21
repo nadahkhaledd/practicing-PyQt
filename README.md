@@ -14,9 +14,14 @@
 pip install sip pyqt5
 ```
 
-### Result
-> ![before](https://user-images.githubusercontent.com/63652516/159278467-f4a72780-2f08-456b-b84e-0ffa7c43d72b.PNG)  
+### Result of QML App
+> https://user-images.githubusercontent.com/63652516/159288074-02dba6e9-e4fc-4081-b232-136f775f62a5.mp4
 
-> ![after](https://user-images.githubusercontent.com/63652516/159278559-e8249470-c811-4b04-b717-1c3acaeb0270.PNG)
+### Result of Qt input field App
+> https://user-images.githubusercontent.com/63652516/159289205-2c1de0cd-5f1b-490b-827d-9f79e5e60bb6.mp4
+
+
+
+
 
 
