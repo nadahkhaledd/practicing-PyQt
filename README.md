@@ -7,3 +7,10 @@
 ```
 pip install sip pyqt5
 ```
+
+### Result
+> ![before](https://user-images.githubusercontent.com/63652516/159278467-f4a72780-2f08-456b-b84e-0ffa7c43d72b.PNG)  
+
+> ![after](https://user-images.githubusercontent.com/63652516/159278559-e8249470-c811-4b04-b717-1c3acaeb0270.PNG)
+
+
