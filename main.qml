@@ -8,6 +8,8 @@ ApplicationWindow
     id: mainWindow
     height: 160
     width: 300
+    visible: true
+    title: "QML App"
 
     Item
     {
@@ -17,16 +19,30 @@ ApplicationWindow
 
         Rectangle
         {
+            id: mainRectangle
             height: 160
+            width: parent.width
             color: "#eab676"
 
             Text
             {
+                id: mainText
                 text: "Regular text"
-                height: 50
+                height: 30
                 width: parent.width
                 font.pixelSize: 12
+                horizontalAlignment: Text.AlignHCenter
 
+            }
+
+            Button
+            {
+                id: mainButton
+                text: "Ok"
+                anchors.top: mainText.bottom
+                onClicked: {
+                    mainRectangle.color = "#abdbe3"
+                }
             }
         }
     }
