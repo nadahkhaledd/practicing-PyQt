@@ -10,25 +10,29 @@ class MainWindow(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        label = QLabel('Name')
-        name_input = QLineEdit()
+        self.text = QLabel('Hello!')
+        self.label = QLabel('Name')
+        self.name_input = QLineEdit()
         button = QPushButton('set name')
+        button.clicked.connect(self.alterName)
 
         h = QHBoxLayout()
-        h.addStretch(1)
-        h.addWidget(label)
-        h.addWidget(name_input)
+        h.addWidget(self.label)
+        h.addWidget(self.name_input)
 
         v = QVBoxLayout()
         v.addStretch(1)
+        v.addWidget(self.text)
         v.addLayout(h)
         v.addWidget(button)
-
 
         self.setLayout(v)
         self.setWindowTitle('Layout')
         self.show()
 
+    def alterName(self):
+        input = self.name_input.text()
+        self.text.setText('Hello, ' + input + '!')
 
 
 if __name__ == '__main__':
