@@ -41,7 +41,12 @@ ApplicationWindow
                 text: "Ok"
                 anchors.top: mainText.bottom
                 onClicked: {
-                    mainRectangle.color = "#abdbe3"
+                    if (mainRectangle.color == "#abdbe3") {
+                        mainRectangle.color = "#eab676"
+                    }
+                    else {
+                            mainRectangle.color = "#abdbe3"
+                    }
                 }
             }
         }
